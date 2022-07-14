@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main-page.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/price.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Simple Design</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- -------------header start ---------------------->
+		<header class="header">
+			<div class="header__container _container">
+				<a class="header__logo logo" href="index.html">
+					<p class="logo__title">Simple <span>Design</span></p>
+					<p class="logo__subtitle">дизайн интерьера</p>
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon"><span></span></div>
+					<nav class="menu__body menu__body_da">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="index.html">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="catalog.html">Каталог</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="about.html">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link menu__link--active" href="price.html">Цены</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a data-da=".menu__body_da,768,last" class="header__phone phone" href="tel:+38002174718">+3(800)
+					217-47-18</a>
+			</div>
+		</header>
+		<!-- -------------header end ---------------------->
+		<!-- -------------main start ---------------------->
+		<main class="page">
+			<!-- -------------product  start ---------------------->
+			<section class="product">
+				<div class="product__container _container">
+					<!-- Slider main container -->
+					<div class="swiper product__slider">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper product__slider-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide product__slider-slide">
+								<div class="product__slider-picture">
+									<img src="img/product/01.jpg" alt="picture">
+								</div>
+							</div>
+							<div class="swiper-slide product__slider-slide">
+								<div class="founder__slider-picture">
+									<img src="img/product/01.jpg" alt="picture">
+								</div>
+							</div>
+							<div class="swiper-slide product__slider-slide">
+								<div class="founder__slider-picture">
+									<img src="img/product/01.jpg" alt="picture">
+								</div>
+							</div>
+						</div>
+						<!--If we need pagination
+						<div class="swiper-pagination"></div>-->
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<!--If we need scrollbar
+						<div class="swiper-scrollbar"></div>
+					</div>-->
+					</div>
+					<div class="product__row">
+						<div class="product__item">
+							<div class="product__category">Гостиные</div>
+							<div class="product__name">Акварель (Dark)</div>
+							<div class="product__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a,
+								ligula consequat tellus. In tellus ultrices senectus nisl sit. </div>
+							<button type="button" class="product__button choose-button">
+								<img src="img/price/bag-white.svg" alt="bag">
+								В корзину</button>
+							<div class="product__price">Стоимость комнаты: 30 000 тг</div>
+						</div>
+						<div class="product__desc">
+							<ul class="product__desc-list">
+								<li class="product__desc-item"><span>Цветовая гамма:</span> прохладная палитра</li>
+								<li class="product__desc-item"><span>Основные материалы:</span> краска, белая эмаль</li>
+								<li class="product__desc-item"><span>Акцентные элементы:</span> лиловый цвет в отделке стен</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product-get__box">
+						<div class="product-get__title">Что вы получаете</div>
+						<ul class="product-get__list">
+							<li class="product-get__item">смета на мебель и освещение (названия и артикулы)</li>
+							<li class="product-get__item">ведомость материалов</li>
+							<li class="product-get__item">чертежи дизайна под вашу планировку (развертки стен)</li>
+						</ul>
+						<a class="design__pdf" href="files/megane.pdf">Посмотреть пример</a>
+					</div>
+				</div>
+			</section>
+			<!-- -------------product end ---------------------->
+
+			<!-- -------------additional  start ---------------------->
+			<section class="additional">
+				<div class="additional__container _container">
+					<h2 class="additional__title page__title">Дизайн комнат</h2>
+					<div class="additional__row">
+						<div class="additional__column">
+							<div class="additional__picture">
+								<img src="img/additional/image-1.jpg" alt="picture">
+							</div>
+							<p class="additional__text">Тендер строительных бригад</p>
+						</div>
+						<div class="additional__column">
+							<div class="additional__picture">
+								<img src="img/additional/image-2.jpg" alt="picture">
+							</div>
+							<p class="additional__text">Составление сметы</p>
+						</div>
+						<div class="additional__column">
+							<div class="additional__picture">
+								<img src="img/additional/image-3.jpg" alt="picture">
+							</div>
+							<p class="additional__text">Печать альбома</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- -------------additional  end ---------------------->
+
+			<!-- -------------how-it  start ---------------------->
+			<section class="how-it">
+				<div class="how-it__container _container">
+					<h2 class="how-it__title page__title">Как это работает?</h2>
+					<div class="how-it__row">
+						<div class="how-it__item how-it__item--1">
+							<div class="how-it__item-num">01</div>
+							<div class="how-it__item-title">Выбор состава проекта</div>
+							<div class="how-it__item-text">Выберите состав вашего проекта: только планировка или дизайн-проект
+							</div>
+						</div>
+						<div class="how-it__item how-it__item--2">
+							<div class="how-it__item-num">02</div>
+							<div class="how-it__item-title">Настройка проекта</div>
+							<div class="how-it__item-text">Отметьте в корзине нужен ли вам профессиональный замер, подбор
+								строительной бригады или точный просчет сметы</div>
+						</div>
+						<div class="how-it__item how-it__item--3">
+							<div class="how-it__item-num">03</div>
+							<div class="how-it__item-title">Создание чертежей</div>
+							<div class="how-it__item-text">Наши дизайнеры спроектируют интерьер, подготовят чертежи и сметы.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- -------------how-it  end ---------------------->
+
+		</main>
+		<!-- -------------main end ---------------------->
+
+		<!-- -------------footer start ---------------------->
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__top">
+					<a class="footer__logo logo" href="index.html">
+						<p class="logo__title">Simple <span>Design</span></p>
+						<p class="logo__subtitle">дизайн интерьера</p>
+					</a>
+					<div class="footer__menu">
+						<ul class="footer__list">
+							<li class="footer_item">
+								<a class="footer__link" href="#">Главная</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Каталог</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">О нас</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#">Цены</a>
+							</li>
+						</ul>
+					</div>
+					<p class="footer__text">Политика конфиденциальности
+						Условия пользования</p>
+					<a class="header__phone phone" href="tel:+38002174718">+3(800)
+						217-47-18</a>
+				</div>
+			</div>
+			<div class="footer__copy">
+				<p class="footer__copy-text">(с) 2022. Все права защищены.</p>
+			</div>
+		</footer>
+		<!-- -------------footer end ---------------------->
+	</div>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

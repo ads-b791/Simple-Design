@@ -1,0 +1,140 @@
+@import "./base.css";
+
+
+
+/* ---catalog  start------------------------------------------------------------------------- */
+
+.catalog {
+	padding-top: 200px;
+}
+/* ---.living-room__slider  start------------------------------------------------------------------------- */
+.bedroom__slider,
+.bathroom__slider,
+.kitchen__slider,
+.living-room__slider,
+.hallway__slider,
+.childrens-room__slider{
+	margin-bottom: 110px;
+}
+.catalog__picture {
+	max-width: 363px;
+	margin-bottom: 46px;
+}
+.catalog__picture img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.bedroom__slider .swiper-button-prev,
+.bathroom__slider .swiper-button-prev,
+.kitchen__slider .swiper-button-prev,
+.hallway__slider .swiper-button-prev,
+.living-room__slider .swiper-button-prev,
+.childrens-room__slider .swiper-button-prev {
+	top: 35%;
+}
+.bedroom__slider .swiper-button-next,
+.bathroom__slider .swiper-button-next,
+.kitchen__slider .swiper-button-next,
+.hallway__slider .swiper-button-next,
+.living-room__slider .swiper-button-next,
+.childrens-room__slider .swiper-button-next {
+	top: 35%;
+}
+.bedroom__slider .swiper-button-prev,
+.bathroom__slider .swiper-button-prev,
+.kitchen__slider .swiper-button-prev,
+.hallway__slider .swiper-button-prev,
+.living-room__slider .swiper-button-prev,
+.childrens-room__slider .swiper-button-prev{
+	width: 76px;
+	height: 76px;
+	left: -12px;
+
+}
+.bedroom__slider .swiper-button-next,
+.bathroom__slider .swiper-button-next,
+.kitchen__slider .swiper-button-next,
+.hallway__slider .swiper-button-next,
+.living-room__slider .swiper-button-next,
+.childrens-room__slider .swiper-button-next{
+	width: 76px;
+	height: 76px;
+	right: 4px;
+
+}
+.bedroom__slider .swiper-button-prev::after,
+.bathroom__slider .swiper-button-prev::after,
+.kitchen__slider .swiper-button-prev::after,
+.hallway__slider .swiper-button-prev::after,
+.living-room__slider .swiper-button-prev::after,
+.childrens-room__slider .swiper-button-prev::after {
+	font-size: 0;
+	width: 76px;
+	height: 76px;
+	background-image: url(../img/founder/prev.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bedroom__slider .swiper-button-next::after,
+.bathroom__slider .swiper-button-next::after,
+.kitchen__slider .swiper-button-next::after,
+.hallway__slider .swiper-button-next::after,
+.living-room__slider .swiper-button-next::after,
+.childrens-room__slider .swiper-button-next::after {
+	font-size: 0;
+	width: 76px;
+	height: 76px;
+	background-image: url(../img/founder/next.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media (max-width: 1228px){
+	.catalog__picture {
+		max-width: 100%;
+	}
+	.catalog .choose-box {
+		max-width: 100%;
+		justify-content: space-around;
+	}
+	.bedroom__slider .swiper-button-next,
+	.bathroom__slider .swiper-button-next,
+	.kitchen__slider .swiper-button-next,
+	.hallway__slider .swiper-button-next,
+	.living-room__slider .swiper-button-next,
+	.childrens-room__slider .swiper-button-next{
+		right: -12px;
+	}
+}
+@media (max-width: 1180px){
+	.catalog {
+		padding-top: calc(120px + (200 - 120) * ((100vw - 320px) / (1180 - 320)));
+	}
+	.bedroom__slider,
+	.bathroom__slider,
+	.kitchen__slider,
+	.living-room__slider,
+	.hallway__slider,
+	.childrens-room__slider{
+		margin-bottom: calc(40px + (110 - 40) * ((100vw - 320px) / (1180 - 320)));
+	}
+}
+@media (max-width: 342px){
+	.bedroom__slider .swiper-button-prev,
+	.bathroom__slider .swiper-button-prev,
+	.kitchen__slider .swiper-button-prev,
+	.hallway__slider .swiper-button-prev,
+	.living-room__slider .swiper-button-prev,
+	.childrens-room__slider .swiper-button-prev {
+		top: 30%;
+	}
+	.bedroom__slider .swiper-button-next,
+	.bathroom__slider .swiper-button-next,
+	.kitchen__slider .swiper-button-next,
+	.hallway__slider .swiper-button-next,
+	.living-room__slider .swiper-button-next,
+	.childrens-room__slider .swiper-button-next {
+		top: 30%;
+	}
+}
+/* ---living-room  end------------------------------------------------------------------------- */

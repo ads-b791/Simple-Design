@@ -1,0 +1,201 @@
+@import "./base.css";
+
+
+
+/* ---product  start------------------------------------------------------------------------- */
+.product {
+	padding-top: 200px;
+	margin-bottom: 127px;
+}
+.product__slider{
+	margin-bottom: 80px;
+}
+.product__slider-picture img{
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.product__slider .swiper-button-prev{
+	width: 76px;
+	height: 76px;
+	left: -12px;
+}
+.product__slider .swiper-button-next{
+	width: 76px;
+	height: 76px;
+	right: -12px;
+
+}
+.product__slider .swiper-button-prev::after {
+	font-size: 0;
+	width: 76px;
+	height: 76px;
+	background-image: url(../img/founder/prev.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.product__slider .swiper-button-next::after {
+	font-size: 0;
+	width: 76px;
+	height: 76px;
+	background-image: url(../img/founder/next.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.product__row {
+	display: flex;
+	margin-bottom: 60px;
+	column-gap: 118px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+@media (min-width: 1227px){
+.product__item {
+	max-width: 465px;
+}
+}
+.product__category {
+	font-size: 20px;
+	line-height: 120%;
+	color: #BD7048;
+	margin-bottom: 10px;
+}
+.product__name {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 123%;
+	color: #262626;
+	margin-bottom: 25px;
+}
+.product__text {
+	font-weight: 400;
+	line-height: 120%;
+	color: rgba(38, 38, 38, 0.7);
+	margin-bottom: 40px;
+}
+.product__button {
+	margin-bottom: 10px;
+}
+.product__price {
+	font-weight: 500;
+	line-height: 120%;
+	color: rgba(38, 38, 38, 0.7);
+}
+.product__desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.product__desc-item {
+	font-weight: 400;
+	line-height: 120%;
+	color: rgba(38, 38, 38, 0.7);
+	list-style: disc;
+}
+.product__desc-item span{
+	color: #BD7048;
+}
+.product__button {
+	background-color: #BD7048;
+	color: #fff;
+	transition: background-color .3s;
+}
+.product__button:hover{
+	background-color: #c57c55;
+}
+.product-get__box {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+}
+.product-get__title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 123%;
+	color: #262626;
+}
+.product-get__item {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 120%;
+	color: #262626;
+	list-style: disc;
+}
+@media (max-width: 1180px){
+	.product__slider .swiper-button-next{
+		width: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+		height: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+	}
+	.product__slider .swiper-button-prev{
+		width: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+		height: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+	}
+	.product__slider .swiper-button-next::after{
+		width: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+		height: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+	}
+	.product__slider .swiper-button-prev::after{
+		width: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+		height: calc(56px + (76 - 56) * ((100vw - 320px) / (1180 - 320)));
+	}
+	.product {
+		padding-top: calc(120px + (200 - 120) * ((100vw - 320px) / (1180 - 320)));
+		margin-bottom: calc(40px + (127 - 40) * ((100vw - 320px) / (1180 - 320)));
+	}
+}
+/* ---product  end------------------------------------------------------------------------- */
+
+/* ---how-it  end------------------------------------------------------------------------- */
+.how-it {
+	margin-bottom: 118px;
+}
+.how-it__title {
+	margin-bottom: 77px;
+}
+.how-it__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.how-it__item {
+	position: relative;
+	max-width: 288px;
+	min-height: 85px;
+	margin-left: 15px;
+}
+.how-it__item-num {
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 120%;
+	color: rgba(189, 112, 72, 0.2);
+}
+.how-it__item-title {
+	font-weight: 500;
+	line-height: 120%;
+	color: #262626;
+	margin-bottom: 10px;
+}
+.how-it__item-text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 120%;
+	color: rgba(38, 38, 38, 0.7);
+}
+@media (max-width: 1180px){
+	.how-it {
+		margin-bottom: calc(40px + (118 - 40) * ((100vw - 320px) / (1180 - 320)));
+	}
+	.how-it__title {
+		margin-bottom: calc(30px + (77 - 30) * ((100vw - 320px) / (1180 - 320)));
+	}
+}
+@media (max-width: 672px){
+	.how-it__item{
+		max-width: 100%;
+	}
+}
+/* ---how-it  end------------------------------------------------------------------------- */
